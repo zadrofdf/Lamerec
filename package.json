@@ -2,11 +2,11 @@
   "name": "liveme-pro-tools",
   "version": "1.1.5",
   "description": "Tools for Live.me video network",
-  "homepage": "https://github.com/lewdninja/liveme-pro-tools/",
+  "homepage": "https://github.com/zadrofdf/Lamerec/",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lewdninja/liveme-pro-tools"
+    "url": "https://github.com/zadrofdf/Lamerec"
   },
   "scripts": {
     "postinstall": "",
@@ -36,7 +36,7 @@
       ],
       "category": "Network",
       "description": "Browse, search and manage accounts, replays and more without the need of an actual account on Live.me.",
-      "maintainer": "lewdninjacom@gmail.com"
+      "maintainer": "thecoder1975@gmail.com"
     },
     "win": {
       "target": [
