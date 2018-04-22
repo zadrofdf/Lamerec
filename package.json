@@ -1,0 +1,92 @@
+{
+  "name": "liveme-pro-tools",
+  "version": "1.1.5",
+  "description": "Tools for Live.me video network",
+  "homepage": "https://github.com/lewdninja/liveme-pro-tools/",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lewdninja/liveme-pro-tools"
+  },
+  "scripts": {
+    "postinstall": "",
+    "start": "./node_modules/.bin/electron . --enable-logging",
+    "dev": "NODE_ENV='development' npm run start",
+    "release-appveyor": "build --publish always",
+    "release-travis": "build --publish always",
+    "release": "build --publish always"
+  },
+  "author": "TheCoder75",
+  "license": "GPL-3.0",
+  "build": {
+    "appId": "com.thecoderstoolbox.livemeprotools",
+    "productName": "LiveMe Pro Tools",
+    "artifactName": "${productName}-${version}-${arch}.${ext}",
+    "asar": true,
+    "compression": "maximum",
+    "linux": {
+      "target": [
+        {
+          "target": "tar.gz",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "category": "Network",
+      "description": "Browse, search and manage accounts, replays and more without the need of an actual account on Live.me.",
+      "maintainer": "lewdninjacom@gmail.com"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "build/appicon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": true
+    },
+    "mac": {
+      "category": "public.app-category.video",
+      "target": [
+        "dmg"
+      ],
+      "identity": null,
+      "icon": "build/appicon.icns"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "vPrefixedTagName": true,
+        "releaseType": "release"
+      }
+    ]
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "axios": "^0.17.1",
+    "electron-is-dev": "^0.3.0",
+    "electron-settings": "^3.1.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "format-duration": "^1.0.0",
+    "hlsdownloader": "^2.1.0",
+    "liveme-api": "github:Lewdninja/liveme-api",
+    "pretty-date": "^0.2.0",
+    "request": "^2.83.0",
+    "shelljs": "^0.8.1",
+    "tar-fs": "^1.16.0"
+  },
+  "devDependencies": {
+    "electron": "^1.8.2",
+    "electron-builder": "^19.56.0"
+  }
+}
