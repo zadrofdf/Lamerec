@@ -1,0 +1,88 @@
+/*
+    Friends/Followings Window Stylings
+*/
+.fflist {
+}
+
+.fflist tr.is-male img.avatar { border: solid 4px rgb(80,96,240); }
+.fflist tr.is-female img.avatar { border: solid 4px rgb(255,160,160); }
+
+
+.fflist td {
+    font-size: 10.5pt;
+    position: relative;
+    padding: 8px 0;
+    height: 96px;
+    border-bottom: solid 8px #000;
+}
+
+.fflist td h1 {
+    position: absolute;
+    z-index: 5;
+    top: 4px;
+    left: 8px;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.fflist td div.seen {
+    position: absolute;
+    z-index: 10;
+    top: 4px;
+    right: 8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 16px;
+}
+.fflist td div.bookmarked {
+    position: absolute;
+    top: 4px;
+    right: 32px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 16px;
+}
+.fflist td div.countrylevel {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    letter-spacing: -0.02em;
+    line-height: 12pt;
+    font-size: 9.5pt;
+    font-weight:  400;
+    padding: 0 8px;
+}
+
+.fflist td div.countrylevel div.cell {
+    display: inline-block;
+}
+.fflist td div.countrylevel div.cell a {
+    cursor: pointer;
+}
+.fflist td div.countrylevel div.cell span {
+    float: right;
+}
+
+.fflist td div.countrylevel b {
+    font-size: 8pt;
+}
+.fflist td div.buttons {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    font-size: 10pt;
+    font-weight:  400;
+}
+.fflist td div.buttons a.button { margin-right: 3px; width: 92px; }
+
+
+footer h1 { font-size: 9pt; }
